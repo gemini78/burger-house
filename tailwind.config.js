@@ -133,6 +133,14 @@ module.exports = {
     },
     caretColor: ({ theme }) => theme('colors'),
     colors: ({ colors }) => ({
+
+      'primary': '#FFc045',
+        'primary-hover': '#f5b029',
+      'secondary': '#3d2514',
+        'secondary-hover': '#231105',
+      'red-primary': '#bf2222',
+        'red-primary-hover': '#990e0e', 
+
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
@@ -302,6 +310,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'secondary': ['"Alfa Slab One"'],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -827,6 +836,12 @@ module.exports = {
       12: '3rem',
       14: '3.5rem',
       16: '4rem',
+
+      17: '4.25rem',
+      18: '4.50rem',
+      19: '4.75rem',
+
+
       20: '5rem',
       24: '6rem',
       28: '7rem',
@@ -989,6 +1004,8 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 
